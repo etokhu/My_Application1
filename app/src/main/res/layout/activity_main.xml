@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#738FD6"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:buttonTint="#FFFFFF"
+        android:text="цифры?"
+        android:textColor="#15408A"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxCaps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassworld" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FFFFFF"
+        android:text="большие буквы?"
+        android:textColor="#15408A"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxSimb"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxNumbers"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxNumbers" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSimb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#FFFFFF"
+        android:shadowColor="#FFFFFF"
+        android:text="доп. символы?"
+        android:textColor="#15408A"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGenerate"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxCaps"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxCaps"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCaps" />
+
+    <TextView
+        android:id="@+id/textPassworld"
+        android:layout_width="363dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="90dp"
+        android:scrollbarStyle="outsideInset"
+        android:text="                    Нужны ли:"
+        android:textColor="#15408A"
+        android:textSize="24sp"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="#15408A"
+        android:shadowColor="#15408A"
+        android:text="Генерация!"
+        android:textColorHint="#15408A"
+        android:textColorLink="#15408A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#15408A"
+        app:strokeColor="#15408A" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
